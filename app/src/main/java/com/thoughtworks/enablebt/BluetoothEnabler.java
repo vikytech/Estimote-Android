@@ -27,4 +27,8 @@ public class BluetoothEnabler extends BroadcastReceiver {
             }
         }
     }
+
+    public void turnOff() {
+        BluetoothAdapter.getDefaultAdapter().disable();
+    }
 }
